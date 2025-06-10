@@ -1,0 +1,22 @@
+# nano configuration file by Inigo.
+
+set linenumbers       # Show line numbers
+set tabsize 4         # Set tab width
+set autoindent        # Preserve indent on new lines
+set mouse			 # Enable mouse support
+unset jumpyscrolling  # Enables smoother scrolling
+set indicator        # Show scrollbar-like indicator on the side
+set zap             # Allows you to highlight text (CTRL+SHIFT+ARROW) and delete it with backspace.
+set speller "aspell -x -c"         # Sets what spelling utility to use.
+# The spell-checker can be invoked with ^T^T.
+
+# In anticipation of nano 8.0, in order to avoid these keys changing their meaning to "find" when updating.
+bind ^F forward main
+bind ^B back main
+# Actually, I don't really use the M-F and M-B keybindings, so I'll comment out these suggestions from the official documentation.
+#bind M-F formatter main
+#bind M-B linter main
+
+# I never justify text, so I rebind ^J to comment lines and M-J to copy.
+bind ^J comment main
+bind M-J copy main

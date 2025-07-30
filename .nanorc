@@ -22,7 +22,7 @@ bind ^J comment main
 bind M-J copy main
 
 # Emacs compatibility. I don't find the default Nano bindings for these keys useful.
-bind ^K copy main
+bind M-K copy main
 bind M-V pageup main
 bind ^C execute main
 bind ^Y paste main

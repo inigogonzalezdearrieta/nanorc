@@ -25,3 +25,5 @@ bind M-J copy main
 bind ^K copy main
 bind M-V pageup main
 bind ^C execute main
+bind ^Y paste main
+bind ^U undo main

@@ -20,3 +20,8 @@ bind ^B back main
 # I never justify text, so I rebind ^J to comment lines and M-J to copy.
 bind ^J comment main
 bind M-J copy main
+
+# Emacs compatibility. I don't find the default Nano bindings for these keys useful.
+bind ^K copy main
+bind M-V pageup main
+bind ^C execute main

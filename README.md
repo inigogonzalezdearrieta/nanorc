@@ -3,7 +3,7 @@ Configuration file for the nano text editor. Besides some simple tweaks, its mai
 
 ## How to use
 
-When on the ~ directory, type:
+Type the following command on your terminal:
 
 >
 > wget -O ~/.nanorc https://raw.githubusercontent.com/inigogonzalezdearrieta/nanorc/refs/heads/main/.nanorc 

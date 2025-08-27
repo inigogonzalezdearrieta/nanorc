@@ -1,4 +1,5 @@
 # nano configuration file by Inigo.
+# Created on June 10, 2025.
 
 set linenumbers       # Show line numbers
 set tabsize 4         # Set tab width
@@ -17,13 +18,17 @@ bind ^B back main
 #bind M-F formatter main
 #bind M-B linter main
 
-# I never justify text, so I rebind ^J to comment lines and M-J to copy.
+# I never justify text, so I rebind ^J to comment lines and unbind M-J.
 bind ^J comment main
-bind M-J copy main
+unbind M-J main
 
 # Emacs compatibility. I don't find the default Nano bindings for these keys useful.
-bind M-K copy main
+bind M-W copy main
+bind ^Space mark main
 bind M-V pageup main
 bind ^C execute main
 bind ^Y paste main
 bind ^U undo main
+
+# By analogy with ^K (cut)
+bind M-K copy main

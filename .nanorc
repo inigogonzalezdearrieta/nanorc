@@ -14,9 +14,14 @@ set speller "aspell -x -c"         # Sets what spelling utility to use.
 # In anticipation of nano 8.0, in order to avoid these keys changing their meaning to "find" when updating.
 bind ^F forward main
 bind ^B back main
-# Actually, I don't really use the M-F and M-B keybindings, so I'll comment out these suggestions from the official documentation.
-#bind M-F formatter main
-#bind M-B linter main
+# Emacs-like M-F and M-B
+bind M-F nextword main
+bind M-B prevword main
+
+# M-F and M-B are used in nano to cycle through search results, so new bindings are required
+# ^S and ^R are good Emacs-like choices for cycling
+bind ^S findnext main
+bind ^R findprevious main
 
 # I never justify text, so I rebind ^J to comment lines and unbind M-J.
 bind ^J comment main

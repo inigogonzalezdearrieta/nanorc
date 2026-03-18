@@ -1,6 +1,7 @@
 # nano configuration file by Inigo.
 # Created on June 10, 2025.
 
+# Basic configurations
 set linenumbers       # Show line numbers
 set tabsize 4         # Set tab width
 set autoindent        # Preserve indent on new lines
@@ -10,6 +11,10 @@ set indicator        # Show scrollbar-like indicator on the side
 set zap             # Allows you to highlight text (CTRL+SHIFT+ARROW) and delete it with backspace.
 set speller "aspell -x -c"         # Sets what spelling utility to use.
 # The spell-checker can be invoked with ^T^T.
+
+# Expert mode (no help or title bars)
+set nohelp
+set minibar
 
 # In anticipation of nano 8.0, in order to avoid these keys changing their meaning to "find" when updating.
 bind ^F forward main
